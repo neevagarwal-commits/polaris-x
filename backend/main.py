@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from risk import router as risk_router
 from navigation import router as navigation_router
+from layers import router as layers_router
 import csv
 import os
 
@@ -50,6 +51,7 @@ DATA_FILE = os.path.join(
 app.include_router(sea_ice_router)
 app.include_router(risk_router)
 app.include_router(navigation_router)
+app.include_router(layers_router)
 
 # ============================================================
 # ROOT

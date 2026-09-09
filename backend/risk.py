@@ -15,8 +15,8 @@ from matplotlib.colors import LinearSegmentedColormap
 
 
 router = APIRouter(
-    prefix="/api/navigation",
-    tags=["Navigation"]
+    prefix="/api",
+    tags=["Risk"]
 )
 
 
